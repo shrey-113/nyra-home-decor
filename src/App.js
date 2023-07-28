@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./fontLoader";
 import IndexScreen from "./screens/indexScreen";
 
 function App() {

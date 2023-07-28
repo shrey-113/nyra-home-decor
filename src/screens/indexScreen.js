@@ -6,6 +6,9 @@ export default function IndexScreen() {
     <>
       <div className="main--card">
         <Header />
+        <div className="info">
+          <p>Wallpaper &emsp; Flooring &emsp; Binds &emsp; Furnishing</p>
+        </div>
       </div>
     </>
   );
