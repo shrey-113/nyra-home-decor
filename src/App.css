@@ -17,3 +17,55 @@
   margin: auto;
   overflow: hidden;
 }
+
+header {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5rem 4rem;
+}
+
+.nyra-home-decor-original {
+  color: #fa7800;
+  font-family: Rounded Mplus 1c;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.0675rem;
+}
+
+.nyra-home-decor-red {
+  color: #ff6464;
+}
+
+.nyra-home-decor-violet {
+  color: #7a64ff;
+}
+
+.nav-items {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: auto 10px;
+  margin-left: auto;
+}
+
+.nav-items > li {
+  padding: 15px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.045rem;
+}
+
+.nav-items > li:hover {
+  cursor: pointer;
+}
+
+.nav-items > li.selected {
+  color: #ff6464;
+}

@@ -1,10 +1,11 @@
 import React from "react";
+import Header from "../components/Header";
 
 export default function IndexScreen() {
   return (
     <>
       <div className="main--card">
-        <h1>Nyra Home Decor</h1>
+        <Header />
       </div>
     </>
   );
