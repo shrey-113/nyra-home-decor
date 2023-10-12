@@ -17,7 +17,7 @@ export default function IndexScreen() {
 
         <Header /> 
           </div>
-          
+
         <div className="info">
           <a>Wallpaper</a>
           <a>Flooring</a>
@@ -47,11 +47,7 @@ export default function IndexScreen() {
 
             <div
               className="indexscreen-text"
-              style={{
-                margin: "auto",
-                marginLeft: "4rem",
-                width: "28rem",
-              }}
+          
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
