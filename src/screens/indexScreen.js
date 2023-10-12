@@ -14,16 +14,15 @@ export default function IndexScreen() {
       >
         <div className="navbar">
           <div>
-
-        <Header /> 
+            <Header />
           </div>
 
-        <div className="info">
-          <a>Wallpaper</a>
-          <a>Flooring</a>
-          <a>Binds</a>
-          <a>Furnishing</a>
-        </div>
+          <div className="info">
+            <a>Wallpaper</a>
+            <a>Flooring</a>
+            <a>Binds</a>
+            <a>Furnishing</a>
+          </div>
         </div>
 
         <div className="two-column-layout">
@@ -45,10 +44,7 @@ export default function IndexScreen() {
               </div>
             </div>
 
-            <div
-              className="indexscreen-text"
-          
-            >
+            <div className="indexscreen-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam
