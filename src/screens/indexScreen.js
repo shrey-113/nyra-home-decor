@@ -12,12 +12,18 @@ export default function IndexScreen() {
           backgroundImage: `url(${background})`,
         }}
       >
-        <Header />
+        <div className="navbar">
+          <div>
+
+        <Header /> 
+          </div>
+          
         <div className="info">
           <a>Wallpaper</a>
           <a>Flooring</a>
           <a>Binds</a>
           <a>Furnishing</a>
+        </div>
         </div>
 
         <div className="two-column-layout">
