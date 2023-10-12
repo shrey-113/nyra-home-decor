@@ -6,7 +6,7 @@ import image from "../assets/img1.png";
 export default function IndexScreen() {
   return (
     <>
-      <div
+      <div 
         className="main--card bg-contain bg-center"
         style={{
           backgroundImage: `url(${background})`,
@@ -29,22 +29,30 @@ export default function IndexScreen() {
           <div className="column">
             <div
               style={{
-                margin: "4rem auto",
-                marginLeft: "4rem",
-                marginBottom: "2rem",
-                width: "19.833rem",
+              //   margin: "4rem auto",
+              //   marginLeft: "4rem",
+              //   marginBottom: "2rem",
+              //   width: "19.833rem",
+              paddingLeft: "5.3rem",
+              paddingTop: "6rem"
               }}
             >
               <div className="indexscreen-heading">
+                <div>
                 Renovating{" "}
+                </div>
+                <div>
                 <span className="indexscreen-heading-lighter">Your</span> Home{" "}
+                </div>
+                <div>
                 <span className="indexscreen-heading-lighter">
                   Made Simpler
                 </span>
+                </div>
               </div>
             </div>
 
-            <div className="indexscreen-text">
+            <div className="indexscreen-text" >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam
