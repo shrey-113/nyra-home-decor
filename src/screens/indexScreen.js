@@ -10,6 +10,7 @@ export default function IndexScreen() {
         className="main--card bg-contain bg-center"
         style={{
           backgroundImage: `url(${background})`,
+          
         }}
       >
         <div className="navbar">
@@ -24,47 +25,6 @@ export default function IndexScreen() {
             <a>Furnishing</a>
           </div>
         </div>
-
-        {/* <div className="two-column-layout">
-          <div className="column column1">
-            <div
-              // style={{
-              // //   margin: "4rem auto",
-              // //   marginLeft: "4rem",
-              // //   marginBottom: "2rem",
-              // //   width: "19.833rem",
-              
-              // }}
-            >
-              <div className="indexscreen-heading">
-                <div>
-                Renovating{" "}
-                </div>
-                <div>
-                <span className="indexscreen-heading-lighter">Your</span> Home{" "}
-                </div>
-                <div>
-                <span className="indexscreen-heading-lighter">
-                  Made Simpler
-                </span>
-                </div>
-              </div>
-            </div>
-              <div>
-            <div className="indexscreen-text" >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tenetur.
-              </div>
-            </div>
-          </div>
-
-          <div className="column">
-            <div className="indexscreen-image">
-              <img src={image} alt="Your Image" className="full-size-image" />
-            </div>
-          </div>
-        </div> */}
         <div className="main-content-container">
           <div className="leftcolumn">
             <div className="indexscreen-heading">
