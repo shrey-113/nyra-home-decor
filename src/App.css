@@ -98,17 +98,21 @@
 
 .two-column-layout {
   display: flex;
+  justify-content: space-between;
+  
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
   border-left: 1px solid transparent; /* This is the invisible vertical line */
 }
 
 .column {
-  flex: 1;
+  /* flex: 1; */
   /* padding: 20p; Adjust the padding as needed */
   color: #000;
   height: 100%;
   overflow: hidden;
+  padding-right: 10rem;
 }
 
 .indexscreen-heading {
@@ -148,8 +152,8 @@
 }
 
 .full-size-image {
-  width: 100%;
-  height: 100%;
+  width: 113%;
+  height: 80%;
   object-fit: cover; /* Maintain aspect ratio and cover the container */
   border-radius: 1.75rem;
 }
@@ -200,15 +204,62 @@
 }
 
 .indexscreen-text {
-  margin: auto;
-  margin-left: 4rem;
+  /* margin: auto; */
+  margin-left: -1rem;
   width: 28rem;
+  /* overflow-wrap: break-word; */
+  /* width: 100%; */
 }
 header{
   padding: 1rem;
   display: flex;
   justify-content: space-between;
 
+}
+.column1{
+  padding-left: 5.3rem;
+  padding-top: 6rem;
+}
+
+.main-content-container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.leftcolumn{
+  /* padding: 0rem 0rem 1rem 0rem; */
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.indexscreen-image-new{
+  width: 38rem;
+  height: 42rem;
+}
+.indexscreen-text-new{
+  width: 20rem;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1350px)
+{
+  .rightcolumn{
+    padding-right: 3rem;
+  }
+  .leftcolumn{
+    padding-left: 3rem;
+  }
+  .full-size-image{
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 1350px){
+  .leftcolumn{
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -237,6 +288,7 @@ header{
     justify-content: center;
   }
   .two-column-layout {
+    display: flex;
     justify-content: center;
     flex-direction: column;
   }
@@ -264,11 +316,29 @@ header{
     display: flex;
     justify-content: center;
     width: 28rem;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: -5rem;
+    
   }
   .column {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
+  .column1{
+    padding-top: 2rem;
+  }
+  .leftcolumn{
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+  }
+  .rightcolumn{
+    padding: 0px;
+  }
+  .full-size-image{
+    margin-top: 0rem;
+    width: 60%;
+    height: 44%;
+  }
+  
 }

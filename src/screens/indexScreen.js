@@ -6,7 +6,7 @@ import image from "../assets/img1.png";
 export default function IndexScreen() {
   return (
     <>
-      <div 
+      <div
         className="main--card bg-contain bg-center"
         style={{
           backgroundImage: `url(${background})`,
@@ -25,17 +25,16 @@ export default function IndexScreen() {
           </div>
         </div>
 
-        <div className="two-column-layout">
-          <div className="column">
+        {/* <div className="two-column-layout">
+          <div className="column column1">
             <div
-              style={{
-              //   margin: "4rem auto",
-              //   marginLeft: "4rem",
-              //   marginBottom: "2rem",
-              //   width: "19.833rem",
-              paddingLeft: "5.3rem",
-              paddingTop: "6rem"
-              }}
+              // style={{
+              // //   margin: "4rem auto",
+              // //   marginLeft: "4rem",
+              // //   marginBottom: "2rem",
+              // //   width: "19.833rem",
+              
+              // }}
             >
               <div className="indexscreen-heading">
                 <div>
@@ -51,11 +50,12 @@ export default function IndexScreen() {
                 </div>
               </div>
             </div>
-
+              <div>
             <div className="indexscreen-text" >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam
+              enim ad minim veniam Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tenetur.
+              </div>
             </div>
           </div>
 
@@ -64,14 +64,39 @@ export default function IndexScreen() {
               <img src={image} alt="Your Image" className="full-size-image" />
             </div>
           </div>
+        </div> */}
+        <div className="main-content-container">
+          <div className="leftcolumn">
+            <div className="indexscreen-heading">
+              <div>Renovating </div>
+              <div>
+                <span className="indexscreen-heading-lighter">Your</span> Home{" "}
+              </div>
+              <div>
+                <span className="indexscreen-heading-lighter">
+                  Made Simpler
+                </span>
+              </div>
+            </div>
+            <div className="indexscreen-text-new" >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tenetur.
+              </div>
+          </div>
+          <div className="rightcolumn">
+          <div className="indexscreen-image-new">
+              <img src={image} alt="Your Image" className="full-size-image" />
+            </div>
+          </div>
         </div>
-        <div className="button-container">
+        {/* <div className="button-container">
           <button className="explore-button">
             <span className="explore-text">Explore</span>
             <div className="explore-line"></div>
             <span className="explore-icon">&#xf178;</span>
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   );
