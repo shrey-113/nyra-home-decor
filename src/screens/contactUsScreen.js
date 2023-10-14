@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "../components/Header";
 import background from "../assets/main-bg.png";
-import image from "../assets/img1.png";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
 
 export default function ContactUsScreen() {
   return (
@@ -18,10 +19,33 @@ export default function ContactUsScreen() {
           </div>
         </div>
 
-        <div className="two-column-layout">
-          <div className="column"></div>
+        <div className="main-content-container">
+          <div className="leftcolumn">
+            <div className="indexscreen-heading">We are open @</div>
 
-          <div className="column">
+            <div className="indexscreen-text-new" style={{ marginTop: "20px" }}>
+              557G, opposite Bikaner Sweets, <br />
+              Makanpur, Nyay Khand 2,
+              <br />
+              Indirapuram, Ghaziabad, <br />
+              Uttar Pradesh - 201014
+              <br />
+            </div>
+
+            <div
+              className="contact-info-container"
+              style={{ marginTop: "2rem" }}
+            ></div>
+
+            <div className="contact-info" style={{ fontSize: "1rem" }}>
+              <BsFillTelephoneFill /> &nbsp; +91 87997 72844
+            </div>
+            <div className="contact-info" style={{ fontSize: "1rem" }}>
+              <AiOutlineMail /> &nbsp; enquiry@nyrahome.in
+            </div>
+          </div>
+
+          <div className="rightcolumn">
             <div
               className="map-div"
               style={{ marginLeft: "0", marginTop: "2rem" }}
