@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import background from "../assets/main-bg.png";
 import image from "../assets/img1.png";
+import { Link } from "react-router-dom";
 
 export default function IndexScreen() {
   return (
@@ -19,10 +20,10 @@ export default function IndexScreen() {
           </div>
 
           <div className="info">
-            <a>Wallpaper</a>
-            <a>Flooring</a>
-            <a>Binds</a>
-            <a>Furnishing</a>
+            <a><Link to="/wallpapers">Wallpaper</Link></a>
+            <a><Link to="/flooring">Flooring</Link></a>
+            <a><Link to="/binds">Binds</Link></a>
+            <a><Link to="/furnishing">Furinshing</Link> </a>
           </div>
         </div>
         <div className="main-content-container">
