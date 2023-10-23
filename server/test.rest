@@ -1,0 +1,6 @@
+POST http://localhost:5000/design/add/new
+Content-Type: application/json
+
+{
+    "name": "HAHAHHAH"
+}
