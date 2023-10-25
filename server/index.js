@@ -7,6 +7,7 @@ const { NextFunction, Request, Response } = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
+const path = require("path");
 
 const app = express();
 
@@ -17,10 +18,11 @@ mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on("error", (error) => console.error(error));
 db.once("open", () => console.log("Connected to mongoose"));
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.use(cors());
 app.use(express.json());
-app.use(morgan("dev"));
+app.use(morgan("dev"));  
 
 app.get("/test", async (req, res) => {
   console.log(req.body);
