@@ -202,8 +202,9 @@ body{
 .explore-button {
   position: absolute;
   bottom: 14rem;
-  width: 13rem;
+  width: 14rem;
   height: 3.7rem;
+  margin-right: 9vw;
   background: linear-gradient(180deg, #ffd600 0%, #d26c6a 0.01%, #600f18 100%);
   color: #fff;
   border: none;
@@ -214,13 +215,16 @@ body{
   justify-content: space-between;
   align-items: center;
 }
+.carousel-main img{
+  border-radius: 2rem;
+}
 
 /* Style for the white line on the left */
 .explore-line {
   width: 0.2rem;
   height: 60%; /* Adjust the height as needed */
   background-color: #fff;
-  margin-left: 0.5rem; /* Adjust the margin as needed */
+  margin-left: -1.5rem; /* Adjust the margin as needed */
 }
 
 /* Style for the "explore" text */
@@ -310,7 +314,8 @@ header {
   flex-direction: column;
 }
 .indexscreen-image-new {
-  width: 38rem;
+  margin-top: 2rem;
+  width: 44rem;
   height: 42rem;
 }
 .indexscreen-text-new {
