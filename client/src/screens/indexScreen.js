@@ -4,7 +4,7 @@ import background from "../assets/main-bg.png";
 import image from "../assets/img1.png";
 import { Link } from "react-router-dom";
 
-export default function IndexScreen() {
+export default function IndexScreen() { 
   return (
     <>
       <div

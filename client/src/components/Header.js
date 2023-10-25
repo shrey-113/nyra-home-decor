@@ -7,8 +7,10 @@ export default function Header() {
   return (
     <header>
       <div className="nyra-home-decor-original">
-        <span className="nyra-home-decor-red">N</span>
-        <span className="nyra-home-decor-violet">YRA</span> &nbsp; HOME DECOR
+        <Link  className="nyra-home-decor-link" to="/">
+          <span className="nyra-home-decor-red">N</span>
+          <span className="nyra-home-decor-violet">YRA</span> &nbsp; HOME DECOR
+        </Link>
       </div>
       <ul className="nav-items">
         <li>

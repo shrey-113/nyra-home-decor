@@ -46,14 +46,10 @@ body{
   background-image: url(https://swiperjs.com/demos/images/nature-3.jpg);
 }
 
-/* header {
-  display: flex;
-  flex-direction: row;
-  margin: 1rem 4rem;
-} */
+
 
 .nyra-home-decor-original {
-  color: #fa7800;
+  color: #fa7800 !important;
   font-family: "Rounded Mplus 1c";
   font-size: 1.5rem;
   font-style: normal;
@@ -66,15 +62,19 @@ body{
   display: flex;
   justify-content: center;
   width: fit-content;
-  /* margin: auto 0; */
+  /* text-decoration: none; */
+}
+.nyra-home-decor-link{
+  text-decoration: none;
+  color: #fa7800 !important
 }
 
 .nyra-home-decor-red {
-  color: #ff6464;
+  color: #ff6464 !important;
 }
 
 .nyra-home-decor-violet {
-  color: #7a64ff;
+  color: #7a64ff !important;
 }
 .nav-items {
   list-style-type: none;
@@ -265,7 +265,7 @@ header {
 }
 .all-images {
   width: 100%;
-  padding: 4rem;
+  padding: 2.5rem 4.5rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -276,7 +276,31 @@ header {
 .small-image-container img{
   width: 15rem;
   height: 15rem;
-  margin: 2rem 3rem;
+  margin: 0rem 3rem 2rem 0;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .small-image-container img{
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem;
+  }
+  .all-images {
+        padding: 0;
+  }
+  
+}
+@media only screen and (max-width: 600px) {
+  .small-image-container img{
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+  }
+  .all-images {
+        padding: 0;
+  }
+  
 }
 .leftcolumn {
   /* padding: 0rem 0rem 1rem 0rem; */

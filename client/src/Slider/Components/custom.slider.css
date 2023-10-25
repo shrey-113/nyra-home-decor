@@ -13,11 +13,12 @@
     background-color: white;
   }
 
-  @media only screen and (max-width: 700px) {
-    .img {
-      height: 20vh;
+  @media only screen and (max-width: 1000px) {
+    .slider__item img{
+      height: 22vh !important;
     }
   }
+
   
   .container__slider > button {
     background-color: transparent;
