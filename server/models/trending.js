@@ -20,4 +20,4 @@ const trendingSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("nyrahomedecor", trendingSchema);
+module.exports = mongoose.model("TrendingSchema", trendingSchema);

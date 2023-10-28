@@ -24,4 +24,4 @@ const designSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("nyrahomedecor", designSchema);
+module.exports = mongoose.model("designSchema", designSchema);
