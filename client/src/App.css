@@ -219,6 +219,38 @@ body{
   border-radius: 2rem;
 }
 
+@media only screen and (max-width: 800px){
+  .carousel *{
+    width: 80%;
+  }
+  .rightcolumn{
+    padding-left: 10rem;
+  }
+ }
+ 
+ @media only screen and (max-width: 700px){
+  .carousel *{
+    width: 75%;
+  }
+ }
+ @media only screen and (max-width: 550px){
+  .carousel *{
+    width: 65%;
+  }
+  .rightcolumn{
+    padding-left: 15.5rem !important;
+  }
+ }
+
+ @media only screen and (max-width: 490px){
+  .carousel *{
+    width: 50%;
+  }
+  .rightcolumn{
+    padding-left: 22rem !important;
+  }
+ }
+
 /* Style for the white line on the left */
 .explore-line {
   width: 0.2rem;
@@ -336,9 +368,7 @@ header {
 }
 
 @media only screen and (max-width: 1350px) {
-  .rightcolumn {
-    padding-right: 3rem;
-  }
+ 
   .leftcolumn {
     padding-left: 3rem;
   }
@@ -424,8 +454,8 @@ header {
     margin-top: 0rem;
   }
   .rightcolumn {
-    padding: 0px;
     height: 42vh;
+    padding-left: 11rem;
   }
   .full-size-image {
     margin-top: 0rem;
