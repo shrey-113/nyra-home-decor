@@ -25,6 +25,29 @@ const addDesign = async (req, res, next) => {
   }
 };
 
+const addTrending = async (req, res, next) => {
+  if (!req.file) {
+    return res.status(400).json({ message: "No file uploaded" });
+  }
+
+  const imgurl = req.file.path;
+
+  const design = new Trending({
+    id: req.body.id,
+    name: req.body.name,
+    imgurl: imgurl,
+    type: req.body.type,
+  });
+
+  try {
+    const newDesign = await design.save();
+    res.status(201).json(newDesign);
+  } catch (error) {
+    res.status(400).json({ message: error });
+    console.log(error);
+  }
+};
+
 const getDesignsByType = async (req, res, next) => {
   const designType = req.params.designType;
   if (!designType) {
@@ -80,11 +103,9 @@ const getSpecificDesignDetails = async (req, res, next) => {
     const specificDesign = await Trending.findOne({ id: designId });
 
     if (!specificDesign) {
-      return res
-        .status(404)
-        .json({
-          message: `No design with ID ${designId} found for type ${designType}`,
-        });
+      return res.status(404).json({
+        message: `No design with ID ${designId} found for type ${designType}`,
+      });
     }
 
     // Return the specific design details as JSON
@@ -101,4 +122,5 @@ module.exports = {
   getDesignsByType,
   trendingDesignsByType,
   getSpecificDesignDetails,
+  addTrending,
 };
