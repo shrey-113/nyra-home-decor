@@ -8,6 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ReactDOM from 'react-dom';
 
 export default function IndexScreen() { 
+  
   return (
     <>
       <div
@@ -55,6 +56,8 @@ export default function IndexScreen() {
           infiniteLoop
           swipeable
           useKeyboardArrows
+          showThumbs={false}
+          showStatus={false}
           >
                 <div>
                     <img src="https://images.unsplash.com/photo-1487088678257-3a541e6e3922?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
