@@ -4,7 +4,8 @@
   "description": "server for Nyra Home Decor Website",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "start": "node app.js",
+    "test": "nodemon app.js"
   },
   "author": "Shreyansh Tiwari",
   "license": "ISC",

@@ -11,7 +11,7 @@ const path = require("path");
 
 const app = express();
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
 
@@ -22,7 +22,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.use(cors());
 app.use(express.json());
-app.use(morgan("dev"));  
+app.use(morgan("dev"));
 
 app.get("/test", async (req, res) => {
   console.log(req.body);
