@@ -64,6 +64,20 @@ body{
   width: fit-content;
   /* text-decoration: none; */
 }
+
+.rightcolumn-expanded{
+  display: flex;
+  justify-content: center;
+}
+
+.full-size-image-expanded{
+  width: 50rem;
+  border-radius: 20px;
+}
+
+.nyra-home-decor-HOME{
+  margin-left: -1px;
+}
 .nyra-home-decor-link{
   text-decoration: none;
   color: #fa7800 !important

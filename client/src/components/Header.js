@@ -9,7 +9,10 @@ export default function Header() {
       <div className="nyra-home-decor-original">
         <Link  className="nyra-home-decor-link" to="/">
           <span className="nyra-home-decor-red">N</span>
-          <span className="nyra-home-decor-violet">YRA</span> &nbsp; HOME DECOR
+          <span className="nyra-home-decor-violet">YRA</span>
+          <span className="nyra-home-decor-HOME" >
+          &nbsp;HOME DECOR
+            </span> 
         </Link>
       </div>
       <ul className="nav-items">

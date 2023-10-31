@@ -9,6 +9,7 @@ import Wallpapers from "./screens/wallpapers";
 import Flooring from "./screens/flooring";
 import Binds from "./screens/binds";
 import Furnishing from "./screens/furnishing";
+import ExpandedView from "./screens/expandedView";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/flooring" element={<Flooring />} />
         <Route path="/binds" element={<Binds />} />
         <Route path="/furnishing" element={<Furnishing />} />
+        <Route path="/product" element={<ExpandedView/> } />
         
         
       </Routes>
