@@ -65,12 +65,15 @@ function ExpandedView() {
           </div>
         </div>
         <div className="main-content-container">
-          <div className="leftcolumn">
+          <div className="leftcolumn leftnew">
             <div className="indexscreen-heading">
-              <div>{productData.name || "LOADING"}</div>
+              <div className="indexscreen-heading-expanded">{productData.name || "LOADING"}</div>
             </div>
 
-            <form></form>
+            <form className="indexscreen-text-new">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut est quam molestiae officia velit modi. Maiores animi libero, non, illum laboriosam ex, dolores esse ducimus dolor alias provident quos molestiae!</form>
+
+            <div className="indexscreen-heading-expanded-price">Rough Price: $5,000</div>
+            <button className="Button-know-more">Click Here to know More!</button>
           </div>
 
           <div className="rightcolumn-expanded">

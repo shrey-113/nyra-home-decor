@@ -80,6 +80,13 @@ export default function IndexScreen() {
               enim ad minim veniam Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Minima, tenetur.
             </div>
+            <div className="button-container">
+          <button className="explore-button">
+            <span className="explore-text">Explore</span>
+            <div className="explore-line"></div>
+            <span className="explore-icon"></span>
+          </button>
+        </div>
           </div>
           <div className="rightcolumn">
             <div className="indexscreen-image-new">
@@ -121,13 +128,7 @@ export default function IndexScreen() {
             </div>
           </div>
         </div>
-        <div className="button-container">
-          <button className="explore-button">
-            <span className="explore-text">Explore</span>
-            <div className="explore-line"></div>
-            <span className="explore-icon">&#xf178;</span>
-          </button>
-        </div>
+        
       </div>
     </>
   );
