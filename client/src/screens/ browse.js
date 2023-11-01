@@ -69,20 +69,29 @@ export default function Browse() {
         <div>
           <Header />
         </div>
-
+        <div className="info-container">
         <div className="info">
           <a>
-            <Link to="/wallpapers">Wallpaper</Link>
+            <Link to="/wallpapers" >
+              <span className={type === "wallpapers" ? "selected-color" : ""}>Wallpaper</span>
+              </Link>
           </a>
           <a>
-            <Link to="/flooring">Flooring</Link>
+            <Link to="/flooring" >
+              <span className={type === "flooring" ? "selected-color" : ""} >Flooring</span>
+              </Link>
           </a>
           <a>
-            <Link to="/binds">Binds</Link>
+            <Link to="/binds" >
+              <span className={type === "binds" ? "selected-color" : ""} >Binds</span>
+              </Link>
           </a>
           <a>
-            <Link to="/furnishing">Furinshing</Link>{" "}
+            <Link to="/furnishing" >
+              <span className={type === "furnishing" ? "selected-color" : ""} >Furnishing</span>
+              </Link>
           </a>
+        </div>
         </div>
       </div>
       <div className="main-content-container">

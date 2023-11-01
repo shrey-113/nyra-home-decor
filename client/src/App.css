@@ -272,6 +272,9 @@ body{
   .carousel *{
     width: 75%;
   }
+  .nav-items > li > a.selected {
+    color: #ff6464 !important
+  }
  }
  @media only screen and (max-width: 550px){
   .carousel *{
@@ -322,6 +325,8 @@ header {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+  font-weight: bolder;
+  
 }
 .column1 {
   padding-left: 5.3rem;
@@ -472,6 +477,16 @@ header {
   .Button-know-more{
     margin-left: 2rem;
   }
+  .info{
+    margin: 12px 0px;
+    width: 100%;
+    background: linear-gradient(180deg, #ffd600 0%, #d26c6a 0.01%, #600f18 100%);
+    padding: 1rem 0rem;
+  }
+  .info a{
+    color: white !important;
+    font-weight: 500;
+  }
 }
 
 @media only screen and (max-width: 670px) {
@@ -485,6 +500,18 @@ header {
   .leftnew{
     margin-right: 2rem;
   }
+  header{
+    padding: 0px;
+  }
+  .indexscreen-heading{
+    text-align: center;
+  }
+  .indexscreen-heading div{
+   margin-right: 2.5rem;
+  }
+
+  
+ 
 }
 @media only screen and (max-width: 400px) {
  
@@ -601,4 +628,7 @@ header {
     width: 60%;
     height: 44%;
   }
+}
+.selected-color{
+  color: #ff6464 !important;
 }
