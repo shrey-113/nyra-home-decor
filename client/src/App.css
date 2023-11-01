@@ -416,6 +416,9 @@ header {
   .full-size-image {
     margin-top: 2rem;
   }
+  .indexscreen-heading-expanded{
+    margin-top: 2rem;
+  }
 }
 
 @media only screen and (max-width: 1350px) {
@@ -427,6 +430,7 @@ header {
   .indexscreen-image-new-expanded img{
 
     margin-top: 2rem;
+    
   }
 }
 
@@ -435,12 +439,38 @@ header {
   .indexscreen-image-new-expanded img{
     width: 45rem;
   }
-  
+  .indexscreen-heading-expanded{
+    text-align: center;
+  }
+  .indexscreen-text-new{
+    text-align: center;
+  }
+  .indexscreen-heading-expanded-price{
+    text-align: center;
+  }
+  .Button-know-more{
+    margin-left: 2rem;
+  }
 }
 @media only screen and (max-width: 770px) {
  
   .indexscreen-image-new-expanded img{
     width: 40rem;
+  }
+  .indexscreen-heading-expanded{
+    margin-top: 1rem !important;
+  }
+  
+}
+
+@media only screen and (max-width: 700px) {
+ 
+  .indexscreen-heading-expanded{
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .Button-know-more{
+    margin-left: 2rem;
   }
 }
 
@@ -449,11 +479,23 @@ header {
   .indexscreen-image-new-expanded img{
     width: 30rem;
   }
+  .Button-know-more{
+    margin-left: 1rem;
+  }
+  .leftnew{
+    margin-right: 2rem;
+  }
 }
 @media only screen and (max-width: 400px) {
  
   .indexscreen-image-new-expanded img{
     width: 23rem;
+  }
+  .leftnew{
+    margin-right: 3rem;
+  }
+  .Button-know-more{
+    margin-left: 2rem;
   }
 }
 
@@ -466,6 +508,9 @@ header {
 
   .explore-button{
     margin-top: 25px;
+  }
+  .indexscreen-heading-expanded{
+    margin-top: 2rem;
   }
 
 }
