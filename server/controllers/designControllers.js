@@ -49,7 +49,7 @@ const addTrending = async (req, res, next) => {
 };
 
 const getDesignsByType = async (req, res, next) => {
-  const designType = req.params.designType;
+  const designType = req.query.designType;
   if (!designType) {
     res.status(200).json({ message: "No valid Parameters" });
   }
@@ -74,7 +74,7 @@ const getDesignsByType = async (req, res, next) => {
 };
 
 const trendingDesignsByType = async (req, res, next) => {
-  const designType = req.params.designType;
+  const designType = req.query.designType;
 
   try {
     // Use the Mongoose model to find trending designs with the specified type
@@ -96,11 +96,12 @@ const trendingDesignsByType = async (req, res, next) => {
 };
 
 const getSpecificDesignDetails = async (req, res, next) => {
-  const designId = req.params.designId;
+  const designId = req.query.designId;
+  const designType = req.query.designType;
 
   try {
     // Use the Mongoose model to find a specific design by ID and type
-    const specificDesign = await Trending.findOne({ id: designId });
+    const specificDesign = await Design.findOne({ id: designId });
 
     if (!specificDesign) {
       return res.status(404).json({
@@ -117,10 +118,34 @@ const getSpecificDesignDetails = async (req, res, next) => {
   }
 };
 
+const getOneForEachType = async (req, res, next) => {
+  const designTypes = ["wallpaper", "flooring", "bind", "furnishing"];
+
+  try {
+    const oneDesignPerType = [];
+
+    // Iterate over the design types and find one design for each type
+    for (const type of designTypes) {
+      const design = await Design.findOne({ type }); // Find one design of the current type
+      if (design) {
+        oneDesignPerType.push(design);
+      }
+    }
+
+    // Return the array of one design for each type
+    res.status(200).json(oneDesignPerType);
+  } catch (error) {
+    // Handle any errors
+    console.error(error);
+    res.status(500).json({ message: "Server error" });
+  }
+};
+
 module.exports = {
   addDesign,
   getDesignsByType,
   trendingDesignsByType,
   getSpecificDesignDetails,
   addTrending,
+  getOneForEachType,
 };
