@@ -57,7 +57,7 @@ function ExpandedView() {
               <Link to="/flooring">Flooring</Link>
             </a>
             <a>
-              <Link to="/binds">Binds</Link>
+              <Link to="/blinds">Blinds</Link>
             </a>
             <a>
               <Link to="/furnishing">Furinshing</Link>{" "}
@@ -67,20 +67,25 @@ function ExpandedView() {
         <div className="main-content-container">
           <div className="leftcolumn leftnew">
             <div className="indexscreen-heading">
-              <div className="indexscreen-heading-expanded">{productData.name || "LOADING"}</div>
+              <div className="indexscreen-heading-expanded">
+                {productData.id || "LOADING"}
+              </div>
             </div>
 
-            <form className="indexscreen-text-new">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut est quam molestiae officia velit modi. Maiores animi libero, non, illum laboriosam ex, dolores esse ducimus dolor alias provident quos molestiae!</form>
+            <form className="indexscreen-text-new">
+              {productData.description || "LOADING"}
+            </form>
 
-            <div className="indexscreen-heading-expanded-price">Rough Price: $5,000</div>
-            <button className="Button-know-more">Click Here to know More!</button>
+            <button className="Button-know-more">
+              Click Here to know More!
+            </button>
           </div>
 
           <div className="rightcolumn-expanded">
             <div className="indexscreen-image-new-expanded">
               <img
                 src={`${apiurl}/${productData.imgurl}`}
-                alt={productData.name || "LOADING"}
+                alt={productData.id || "LOADING"}
                 className="full-size-image-expanded"
               />
             </div>

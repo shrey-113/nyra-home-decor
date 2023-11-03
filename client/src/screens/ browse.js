@@ -16,11 +16,14 @@ export default function Browse() {
       let category = "";
       if (type === "wallpapers") {
         category = "wallpaper";
-      } else if (type === "binds") {
-        category = "bind";
+      } else if (type === "blinds") {
+        category = "blind";
       } else {
         category = type;
       }
+
+      setImageData([]);
+      setTrendingImageData([]);
 
       try {
         const queryParams = new URLSearchParams({
@@ -70,28 +73,36 @@ export default function Browse() {
           <Header />
         </div>
         <div className="info-container">
-        <div className="info">
-          <a>
-            <Link to="/wallpapers" >
-              <span className={type === "wallpapers" ? "selected-color" : ""}>Wallpaper</span>
+          <div className="info">
+            <a>
+              <Link to="/wallpapers">
+                <span className={type === "wallpapers" ? "selected-color" : ""}>
+                  Wallpaper
+                </span>
               </Link>
-          </a>
-          <a>
-            <Link to="/flooring" >
-              <span className={type === "flooring" ? "selected-color" : ""} >Flooring</span>
+            </a>
+            <a>
+              <Link to="/flooring">
+                <span className={type === "flooring" ? "selected-color" : ""}>
+                  Flooring
+                </span>
               </Link>
-          </a>
-          <a>
-            <Link to="/binds" >
-              <span className={type === "binds" ? "selected-color" : ""} >Binds</span>
+            </a>
+            <a>
+              <Link to="/blinds">
+                <span className={type === "blinds" ? "selected-color" : ""}>
+                  Blinds
+                </span>
               </Link>
-          </a>
-          <a>
-            <Link to="/furnishing" >
-              <span className={type === "furnishing" ? "selected-color" : ""} >Furnishing</span>
+            </a>
+            <a>
+              <Link to="/furnishing">
+                <span className={type === "furnishing" ? "selected-color" : ""}>
+                  Furnishing
+                </span>
               </Link>
-          </a>
-        </div>
+            </a>
+          </div>
         </div>
       </div>
       <div className="main-content-container">

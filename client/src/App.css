@@ -2,11 +2,11 @@
   text-align: center;
   height: 100vh;
   width: 100%;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
-} 
-body{
+}
+body {
   width: 100%;
 }
 
@@ -23,7 +23,6 @@ body{
   width: 100%;
   height: 80vh !important;
 }
-
 
 .bg {
   width: 100%;
@@ -46,8 +45,6 @@ body{
   background-image: url(https://swiperjs.com/demos/images/nature-3.jpg);
 }
 
-
-
 .nyra-home-decor-original {
   color: #fa7800 !important;
   font-family: "Rounded Mplus 1c";
@@ -65,22 +62,22 @@ body{
   /* text-decoration: none; */
 }
 
-.rightcolumn-expanded{
+.rightcolumn-expanded {
   display: flex;
   justify-content: center;
 }
 
-.full-size-image-expanded{
+.full-size-image-expanded {
   width: 50rem;
   border-radius: 20px;
 }
 
-.nyra-home-decor-HOME{
+.nyra-home-decor-HOME {
   margin-left: -1px;
 }
-.nyra-home-decor-link{
+.nyra-home-decor-link {
   text-decoration: none;
-  color: #fa7800 !important
+  color: #fa7800 !important;
 }
 
 .nyra-home-decor-red {
@@ -123,11 +120,10 @@ body{
   margin: 0 3.5rem; /* Adjust the margin as needed */
 }
 
-.row1{
+.row1 {
   padding: 2rem 6rem;
-  
 }
-.slide{
+.slide {
   border-radius: 20px;
 }
 .info a {
@@ -142,7 +138,6 @@ body{
   margin: 0rem 0.5rem;
   text-decoration: none !important;
 }
-
 
 .two-column-layout {
   display: flex;
@@ -212,16 +207,21 @@ body{
   margin-right: 5rem;
 }
 
-.indexscreen-heading-expanded{
+.indexscreen-heading-expanded {
   margin-top: 4rem;
 }
-.indexscreen-heading-expanded-price{
+.indexscreen-heading-expanded-price {
   margin-top: 1rem;
   text-align: left;
 }
-.Button-know-more{
+.Button-know-more {
   margin-top: 2rem;
-  background-color: #4CAF50; /* Green */
+  background: linear-gradient(
+    180deg,
+    #ffd600 0%,
+    #d26c6a 0.01%,
+    #600f18 100%
+  ); /* Green */
   width: 16rem;
   height: 4rem;
   border-radius: 20px;
@@ -234,9 +234,6 @@ body{
   display: inline-block;
   font-size: 16px;
 }
-
-
-
 
 .explore-button {
   /* position: absolute; */
@@ -255,44 +252,44 @@ body{
   border-radius: 10px;
   margin: 10px;
 }
-.carousel-main img{
+.carousel-main img {
   border-radius: 2rem;
 }
 
-@media only screen and (max-width: 800px){
-  .carousel *{
+@media only screen and (max-width: 800px) {
+  .carousel * {
     width: 80%;
   }
-  .rightcolumn{
+  .rightcolumn {
     padding-left: 10rem;
   }
- }
- 
- @media only screen and (max-width: 700px){
-  .carousel *{
+}
+
+@media only screen and (max-width: 700px) {
+  .carousel * {
     width: 75%;
   }
   .nav-items > li > a.selected {
-    color: #ff6464 !important
+    color: #ff6464 !important;
   }
- }
- @media only screen and (max-width: 550px){
-  .carousel *{
+}
+@media only screen and (max-width: 550px) {
+  .carousel * {
     width: 65%;
   }
-  .rightcolumn{
+  .rightcolumn {
     padding-left: 15.5rem !important;
   }
- }
+}
 
- @media only screen and (max-width: 490px){
-  .carousel *{
+@media only screen and (max-width: 490px) {
+  .carousel * {
     width: 50%;
   }
-  .rightcolumn{
+  .rightcolumn {
     padding-left: 22rem !important;
   }
- }
+}
 
 /* Style for the white line on the left */
 .explore-line {
@@ -326,7 +323,6 @@ header {
   display: flex;
   justify-content: space-between;
   font-weight: bolder;
-  
 }
 .column1 {
   padding-left: 5.3rem;
@@ -338,9 +334,8 @@ header {
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
-  
 }
-.slider-component{
+.slider-component {
   display: flex;
   justify-content: center;
 }
@@ -350,11 +345,9 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-    
 }
 
-
-.small-image-container img{
+.small-image-container img {
   width: 15rem;
   height: 15rem;
   margin: 0rem 3rem 2rem 0;
@@ -362,26 +355,24 @@ header {
 }
 
 @media only screen and (max-width: 1100px) {
-  .small-image-container img{
+  .small-image-container img {
     width: 15rem;
     height: 15rem;
     margin: 2rem;
   }
   .all-images {
-        padding: 0;
+    padding: 0;
   }
-  
 }
 @media only screen and (max-width: 600px) {
-  .small-image-container img{
+  .small-image-container img {
     width: 8rem;
     height: 8rem;
     margin: 1rem;
   }
   .all-images {
-        padding: 0;
+    padding: 0;
   }
-  
 }
 .leftcolumn {
   /* padding: 0rem 0rem 1rem 0rem; */
@@ -394,6 +385,7 @@ header {
   margin-top: 2rem;
   width: 44rem;
   height: 42rem;
+  padding: 2rem;
 }
 .indexscreen-text-new {
   width: 20rem;
@@ -413,7 +405,6 @@ header {
 }
 
 @media only screen and (max-width: 1350px) {
- 
   .leftcolumn {
     padding-left: 3rem;
     margin-bottom: 15.5rem;
@@ -421,134 +412,123 @@ header {
   .full-size-image {
     margin-top: 2rem;
   }
-  .indexscreen-heading-expanded{
+  .indexscreen-heading-expanded {
     margin-top: 2rem;
   }
 }
 
 @media only screen and (max-width: 1350px) {
- 
   .leftnew {
     padding-left: 3rem;
     margin-bottom: 2.5rem;
   }
-  .indexscreen-image-new-expanded img{
-
+  .indexscreen-image-new-expanded img {
     margin-top: 2rem;
-    
   }
 }
 
 @media only screen and (max-width: 860px) {
- 
-  .indexscreen-image-new-expanded img{
+  .indexscreen-image-new-expanded img {
     width: 45rem;
   }
-  .indexscreen-heading-expanded{
+  .indexscreen-heading-expanded {
     text-align: center;
   }
-  .indexscreen-text-new{
+  .indexscreen-text-new {
     text-align: center;
   }
-  .indexscreen-heading-expanded-price{
+  .indexscreen-heading-expanded-price {
     text-align: center;
   }
-  .Button-know-more{
+  .Button-know-more {
     margin-left: 2rem;
   }
 }
 @media only screen and (max-width: 770px) {
- 
-  .indexscreen-image-new-expanded img{
+  .indexscreen-image-new-expanded img {
     width: 40rem;
   }
-  .indexscreen-heading-expanded{
+  .indexscreen-heading-expanded {
     margin-top: 1rem !important;
   }
-  
 }
 
 @media only screen and (max-width: 700px) {
- 
-  .indexscreen-heading-expanded{
+  .indexscreen-heading-expanded {
     margin-top: 1rem;
     text-align: center;
   }
-  .Button-know-more{
+  .Button-know-more {
     margin-left: 2rem;
   }
-  .info{
+  .info {
     margin: 12px 0px;
     width: 100%;
-    background: linear-gradient(180deg, #ffd600 0%, #d26c6a 0.01%, #600f18 100%);
+    background: linear-gradient(
+      180deg,
+      #ffd600 0%,
+      #d26c6a 0.01%,
+      #600f18 100%
+    );
     padding: 1rem 0rem;
   }
-  .info a{
+  .info a {
     color: white !important;
     font-weight: 500;
   }
 }
 
 @media only screen and (max-width: 670px) {
- 
-  .indexscreen-image-new-expanded img{
+  .indexscreen-image-new-expanded img {
     width: 30rem;
   }
-  .Button-know-more{
+  .Button-know-more {
     margin-left: 1rem;
   }
-  .leftnew{
+  .leftnew {
     margin-right: 2rem;
   }
-  header{
+  header {
     padding: 0px;
   }
-  .indexscreen-heading{
+  .indexscreen-heading {
     text-align: center;
   }
-  .indexscreen-heading div{
-   margin-right: 2.5rem;
+  .indexscreen-heading div {
+    margin-right: 2.5rem;
   }
-
-  
- 
 }
 @media only screen and (max-width: 400px) {
- 
-  .indexscreen-image-new-expanded img{
+  .indexscreen-image-new-expanded img {
     width: 23rem;
   }
-  .leftnew{
+  .leftnew {
     margin-right: 3rem;
   }
-  .Button-know-more{
+  .Button-know-more {
     margin-left: 2rem;
   }
 }
 
 @media only screen and (max-width: 1076px) {
- 
   .leftcolumn {
     padding-left: 3rem;
     margin-bottom: 0rem;
   }
 
-  .explore-button{
+  .explore-button {
     margin-top: 25px;
   }
-  .indexscreen-heading-expanded{
+  .indexscreen-heading-expanded {
     margin-top: 2rem;
   }
-
 }
-
 
 @media only screen and (max-width: 700px) {
   .navbar {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    
   }
   header {
     display: flex;
@@ -614,7 +594,7 @@ header {
     margin-bottom: -1rem;
     margin-top: 0rem;
   }
-  
+
   .rightcolumn {
     height: 42vh;
     padding-left: 11rem;
@@ -629,6 +609,6 @@ header {
     height: 44%;
   }
 }
-.selected-color{
+.selected-color {
   color: #ff6464 !important;
 }

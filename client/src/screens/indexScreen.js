@@ -54,7 +54,7 @@ export default function IndexScreen() {
               <Link to="/flooring">Flooring</Link>
             </a>
             <a>
-              <Link to="/binds">Binds</Link>
+              <Link to="/blinds">Blinds</Link>
             </a>
             <a>
               <Link to="/furnishing">Furinshing</Link>{" "}
@@ -75,18 +75,22 @@ export default function IndexScreen() {
               </div>
             </div>
             <div className="indexscreen-text-new">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Minima, tenetur.
+              Welcome to Nyra Home Decor, your one-stop destination for
+              exquisite home decor solutions. Explore our wide range of stunning
+              wallpapers, elegant blinds, premium floorings, and luxurious
+              furnishing products. Transform your living spaces into stylish
+              havens with our curated selection. Discover the perfect blend of
+              beauty and luxury
             </div>
             <div className="button-container">
-          <button className="explore-button">
-            <span className="explore-text">Explore</span>
-            <div className="explore-line"></div>
-            <span className="explore-icon"></span>
-          </button>
-        </div>
+              <Link to="/wallpaper">
+                <button className="explore-button">
+                  <span className="explore-text">Explore</span>
+                  <div className="explore-line"></div>
+                  <span className="explore-icon"></span>
+                </button>
+              </Link>
+            </div>
           </div>
           <div className="rightcolumn">
             <div className="indexscreen-image-new">
@@ -105,7 +109,7 @@ export default function IndexScreen() {
                     image.type === "wallpaper"
                       ? "wallpapers"
                       : image.type === "bind"
-                      ? "binds"
+                      ? "blinds"
                       : image.type;
                   return (
                     <div
@@ -128,7 +132,6 @@ export default function IndexScreen() {
             </div>
           </div>
         </div>
-        
       </div>
     </>
   );
