@@ -10,7 +10,7 @@ export default function IndexScreen() {
   const [imageData, setImageData] = useState([]);
   const navigate = useNavigate();
 
-  const apiurl = process.env.REACT_APP_API_URL;
+  const apiurl = process.env.REACT_APP_API_URL; 
 
   useEffect(() => {
     const getData = async () => {
@@ -63,7 +63,46 @@ export default function IndexScreen() {
         </div>
         <div className="main-content-container">
           <div className="leftcolumn">
+          <div className="indexscreen-image-new one">
+              <Carousel
+                className="carousel-main"
+                autoPlay
+                interval={2000}
+                infiniteLoop
+                swipeable
+                useKeyboardArrows
+                showThumbs={false}
+                showStatus={false}
+                showArrows={false}
+              >
+                {imageData?.map((image, index) => {
+                  const type =
+                    image.type === "wallpaper"
+                      ? "wallpapers"
+                      : image.type === "bind"
+                      ? "blinds"
+                      : image.type;
+                  return (
+                    <div
+                      key={index}
+                      onClick={() => {
+                        navigate(`/${type}`);
+                      }}
+                    >
+                      <img
+                        key={index}
+                        src={`${apiurl}/${image.imgurl}`}
+                        alt={image.description}
+                        id={image.id}
+                        name={image.name}
+                      />
+                    </div>
+                  );
+                })}
+              </Carousel>
+            </div>
             <div className="indexscreen-heading">
+              
               <div>Renovating </div>
               <div>
                 <span className="indexscreen-heading-lighter">Your</span> Home{" "}
@@ -82,6 +121,7 @@ export default function IndexScreen() {
               havens with our curated selection. Discover the perfect blend of
               beauty and luxury
             </div>
+            
             <div className="button-container">
               <Link to="/wallpaper">
                 <button className="explore-button">
@@ -93,10 +133,11 @@ export default function IndexScreen() {
             </div>
           </div>
           <div className="rightcolumn">
-            <div className="indexscreen-image-new">
+            <div className="indexscreen-image-new two">
               <Carousel
                 className="carousel-main"
                 autoPlay
+                interval={2000}
                 infiniteLoop
                 swipeable
                 useKeyboardArrows
