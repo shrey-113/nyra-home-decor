@@ -20,10 +20,10 @@ export default function ContactUsScreen() {
         </div>
 
         <div className="main-content-container">
-          <div className="leftcolumn">
-            <div className="indexscreen-heading">We are open @</div>
+          <div className="leftcolumn contact-us-details">
+            <div className="indexscreen-heading we-are-OP">We are open @</div>
 
-            <div className="indexscreen-text-new" style={{ marginTop: "20px" }}>
+            <div className="indexscreen-text-new address" style={{ marginTop: "20px" }}>
               557G, opposite Bikaner Sweets, <br />
               Makanpur, Nyay Khand 2,
               <br />
@@ -37,15 +37,15 @@ export default function ContactUsScreen() {
               style={{ marginTop: "2rem" }}
             ></div>
 
-            <div className="contact-info" style={{ fontSize: "1rem" }}>
+            <div className="contact-info" style={{ fontSize: "1.5rem" }}>
               <BsFillTelephoneFill /> &nbsp; +91 87997 72844
             </div>
-            <div className="contact-info" style={{ fontSize: "1rem" }}>
+            <div className="contact-info" style={{ fontSize: "1.5rem" }}>
               <AiOutlineMail /> &nbsp; enquiry@nyrahome.in
             </div>
           </div>
 
-          <div className="rightcolumn">
+          <div className="rightcolumn map-right">
             <div
               className="map-div"
               style={{ marginLeft: "0", marginTop: "2rem" }}

@@ -55,7 +55,7 @@ export default function OwnDesignScreen() {
                 "linear-gradient(180deg,ffd600 0%,#d26c6a 0.01%,#600f18 100%)",
             }}
           >
-            <h1> Coming Soon!! </h1>
+            <h1 className="cumming-soon"> Coming Soon <span>...</span> </h1>
           </div>
         </div>
       </div>

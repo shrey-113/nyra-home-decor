@@ -301,6 +301,7 @@ body {
   .rightcolumn {
     padding-left: 24rem !important;
   }
+  
 }
 
 /* Style for the white line on the left */
@@ -531,6 +532,12 @@ header {
     display: flex;
     height: 22rem;
   }
+  /* .rightcolumn{
+    display: none;
+  } */
+  .explore-button{
+    display: none;
+  }
 
   .indexscreen-image-new-expanded img {
     width: 30rem;
@@ -687,4 +694,60 @@ header {
 }
 .selected-color {
   color: #ff6464 !important;
+}
+
+.cumming-soon{
+  text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+}
+
+/* .cumming-soon {
+  text-align: center;
+  font-size: 24px;
+} */
+
+.cumming-soon span {
+  display: inline-block;
+  animation: dot-animation 2s infinite;
+}
+
+@keyframes dot-animation {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  50% { opacity: 0; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.contact-us-details{
+  margin-top: 4rem;
+  font-size: x-large;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .map-div iframe {
+  width: 20rem;
+  height: 20rem;
+  margin-left: -23rem;
+  
+  }
+  .contact-us-details{
+    margin-top: 1rem;
+    
+  }
+  
+.address{
+  margin-left: 0px;
+}
+.we-are-OP{
+  margin-left: -2rem;
+}
+.contact-info{
+  margin-left: -1rem;
+}
 }
