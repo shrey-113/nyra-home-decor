@@ -596,6 +596,14 @@ header {
 
 }
 
+@media only screen and (max-width: 500px) {
+  .indexscreen-image-new-expanded img {
+    width: 23rem;
+    height: 20rem;
+  }
+ 
+}
+
 @media only screen and (max-width: 1076px) {
   .leftcolumn {
     padding-left: 3rem;
