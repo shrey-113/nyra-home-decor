@@ -70,6 +70,7 @@ body {
 .full-size-image-expanded {
   width: 50rem;
   border-radius: 20px;
+  height: 35rem;
 }
 
 .nyra-home-decor-HOME {
@@ -515,7 +516,7 @@ header {
   width: 100% !important;
 }
 .slider__item img {
-  height: 73vh !important;
+  height: 62vh !important;
   border-radius: 0px !important;
 }
 .slider-component {
@@ -543,10 +544,10 @@ header {
     width: 30rem;
   }
   .Button-know-more {
-    margin-left: 1rem;
+    margin-left: 15rem;
   }
   .leftnew {
-    margin-right: 2rem;
+    margin-right: 15rem;
   }
   header {
     padding: 0px;
@@ -561,6 +562,9 @@ header {
     text-align: justify !important;
     margin-left: 11rem;
   }
+  .index-text-expanded{
+    margin-left: 12rem;
+  }
   .carousel{
     margin-left: -48rem !important;
     
@@ -570,18 +574,26 @@ header {
   border-radius: 2rem;
   height: 20rem;
   }
+  .indexscreen-heading-expanded{
+    display: flex;
+    justify-content: center;
+    padding-left: 14rem;
+  }
 
 }
 @media only screen and (max-width: 400px) {
   .indexscreen-image-new-expanded img {
-    width: 23rem;
+    width: 22rem;
+    height: 20rem;
   }
   .leftnew {
-    margin-right: 3rem;
+    margin-right: 15rem;
   }
   .Button-know-more {
-    margin-left: 2rem;
+    margin-left: 15rem;
+    margin-top: 0.5rem;
   }
+
 }
 
 @media only screen and (max-width: 1076px) {
@@ -596,7 +608,9 @@ header {
   .indexscreen-heading-expanded {
     margin-top: 2rem;
   }
+  
 }
+
 
 @media only screen and (max-width: 700px) {
   
@@ -606,7 +620,7 @@ header {
 
   .slider-component{
     height: 15rem;
-    margin-top: -40px;
+    margin-top: -10px;
   }
   .navbar {
     display: flex;

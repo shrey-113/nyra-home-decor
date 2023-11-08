@@ -72,7 +72,7 @@ function ExpandedView() {
               </div>
             </div>
 
-            <form className="indexscreen-text-new">
+            <form className="indexscreen-text-new index-text-expanded">
               {productData.description || "LOADING"}
             </form>
 
