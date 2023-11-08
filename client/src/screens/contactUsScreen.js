@@ -38,17 +38,22 @@ export default function ContactUsScreen() {
             ></div>
 
             <div className="contact-info" style={{ fontSize: "1.5rem" }}>
+              <a href="tel:+918799772844">
               <BsFillTelephoneFill /> &nbsp; +91 87997 72844
+              </a>
             </div>
             <div className="contact-info" style={{ fontSize: "1.5rem" }}>
+              <a href="mailto:enquiry@nyrahome.in">
+
               <AiOutlineMail /> &nbsp; enquiry@nyrahome.in
+              </a>
             </div>
           </div>
 
           <div className="rightcolumn map-right">
             <div
               className="map-div"
-              style={{ marginLeft: "0", marginTop: "2rem" }}
+
             >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.800927996018!2d77.3599368!3d28.6357279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb536f9e861d%3A0x3dec5676305709e5!2sNYRA%20HOME%20DECOR!5e0!3m2!1sen!2sin!4v1697137109458!5m2!1sen!2sin"
