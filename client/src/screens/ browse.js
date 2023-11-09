@@ -3,6 +3,8 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import Header from "../components/Header";
 import background from "../assets/main-bg.png";
 import CustomSlider from "../Slider/Components/custom.slider";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Browse() {
   const [imageData, setImageData] = useState([]);
@@ -10,6 +12,48 @@ export default function Browse() {
   const apiurl = process.env.REACT_APP_API_URL;
   const { type } = useParams();
   const navigate = useNavigate();
+
+  const CarouselTwo = () => {
+    return (
+      <Carousel
+      className="carousel-main carousel-browse"
+      autoPlay
+      interval={2000}
+      infiniteLoop
+      swipeable
+      useKeyboardArrows
+      showThumbs={false}
+      showStatus={false}
+      showArrows={false}
+    >
+        {trendingImageData?.map((image, index) => {
+        const type =
+          image.type === "wallpaper"
+            ? "wallpapers"
+            : image.type === "bind"
+            ? "blinds"
+            : image.type;
+        return (
+          <div
+            key={index}
+            onClick={() => {
+              navigate(`/${type}`);
+            }}
+          >
+            <img
+              key={index}
+              src={`${apiurl}/${image.imgurl}`}
+              alt={image.description}
+              id={image.id}
+              name={image.name}
+            />
+          </div>
+        );
+      })}
+        
+    </Carousel>
+    );
+  }
 
   useEffect(() => {
     const getImages = async () => {
@@ -121,6 +165,9 @@ export default function Browse() {
             })}
           </CustomSlider>
         </div>
+        
+       {/* <CarouselTwo /> */}
+        
         <div className="all-images">
           {imageData.map((image, index) => (
             <div className="small-image-container" key={index}>
