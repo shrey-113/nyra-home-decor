@@ -119,6 +119,7 @@ body {
   justify-self: left;
   text-align: left;
   margin: 0 3.5rem; /* Adjust the margin as needed */
+  z-index: 100 !important;
 }
 
 .row1 {
@@ -554,6 +555,7 @@ header {
   }
   .indexscreen-heading {
     text-align: center;
+    margin-top: -3rem;
   }
   .indexscreen-heading div {
     margin-right: 2.5rem;
@@ -569,6 +571,9 @@ header {
     margin-left: -48rem !important;
     
   }
+  .carousel-root{
+    margin-top: -1.5rem;
+  }
   .carousel-main img {
   width: 50rem !important;
   border-radius: 2rem;
@@ -578,6 +583,10 @@ header {
     display: flex;
     justify-content: center;
     padding-left: 14rem;
+  }
+  .info {
+    margin-bottom: 0rem;
+    margin-top: 0rem !important;
   }
 
 }
@@ -614,7 +623,7 @@ header {
     margin-top: 25px;
   }
   .indexscreen-heading-expanded {
-    margin-top: 2rem;
+    margin-top: 3rem !important;
   }
   
 }
@@ -653,6 +662,8 @@ header {
   .info {
     display: flex;
     justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-top: -1rem;
   }
   .two-column-layout {
     display: flex;
@@ -764,12 +775,22 @@ header {
   }
   
 .address{
-  margin-left: 0px;
+  margin-left: -1.5rem;
+  margin-top: 0px;
+  text-align: center !important;
 }
 .we-are-OP{
   margin-left: -2rem;
+  margin-top: 0rem;
 }
 .contact-info{
-  margin-left: -1rem;
+  margin-left: 1.2rem;
+  font-size: large !important;
+}
+.contact-info-container{
+  margin: 0rem !important;
+}
+.map-div{
+  margin-top: 2rem;
 }
 }
