@@ -77,7 +77,9 @@ function ExpandedView() {
             </form>
 
             <button className="Button-know-more">
+            <a href="tel:+918799772844">
               Click Here to know More!
+              </a>
             </button>
           </div>
 
