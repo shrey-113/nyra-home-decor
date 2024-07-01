@@ -30,6 +30,12 @@ app.get("/test", async (req, res) => {
   res.status(200).json({ message: "Message recieved" });
 });
 
+app.get("/testing", async (req, res) => {
+  console.log(req.body);
+  console.log("Test route hit");
+  res.status(200).json({ message: "Message recieved" });
+});
+
 const designRouter = require("./routes/designRouter");
 
 app.use("/design", designRouter);
