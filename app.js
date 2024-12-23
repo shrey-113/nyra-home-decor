@@ -41,5 +41,5 @@ const designRouter = require("./routes/designRouter");
 app.use("/design", designRouter);
 
 app.listen(PORT, async () => {
-  console.log(`Server listening on port ${PORT}`);
+  console.log(`Server listening on port ${PORT}!`);
 });
