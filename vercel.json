@@ -2,25 +2,18 @@
     "version": 2,
     "builds": [
       {
-        "src": "./server/app.js",
-        "use": "@vercel/node",
-        "config": {
-          "maxDuration": 30
-        }
-      },
-      {
-        "src": "./server/public/*",
-        "use": "@vercel/static"
+        "src": "app.js",
+        "use": "@vercel/node"
       }
     ],
     "routes": [
       {
-        "src": "/api/(.*)",
-        "dest": "/server/app.js"
+        "src": "/uploads/(.*)",
+        "dest": "/uploads/$1"
       },
       {
         "src": "/(.*)",
-        "dest": "/server/public/$1"
+        "dest": "app.js"
       }
     ]
   }
